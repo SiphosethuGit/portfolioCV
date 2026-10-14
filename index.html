@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Siphosethu Mofokeng | ICT Graduate</title>
+<meta name="description" content="Portfolio of Siphosethu Mofokeng, ICT graduate in software development, cloud, networking and support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#f4f6f1;--panel:#fff;--ink:#0f1d1a;--mute:#53645f;--line:#d6ded9;--acc:#0b7a63;--acc-ink:#fff;--hi:#f2c744;--soft:#e6f1ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1512;--panel:#12201c;--ink:#e8f0ec;--mute:#9db2aa;--line:#25372f;--acc:#3fcfae;--acc-ink:#07130f;--soft:#173028}}
+:root[data-theme="dark"]{--bg:#0b1512;--panel:#12201c;--ink:#e8f0ec;--mute:#9db2aa;--line:#25372f;--acc:#3fcfae;--acc-ink:#07130f;--soft:#173028}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:24px;align-items:center;height:58px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav b{font:700 20px "Bricolage Grotesque",sans-serif;margin-right:auto}
+nav b i{font-style:normal;color:var(--acc)}
+nav a{text-decoration:none;color:var(--mute);font-size:15px;padding:4px 0}
+nav a:hover{color:var(--ink)}
+/* hero */
+.hero{background:#09130f;color:#eaf3ef;position:relative;overflow:hidden;
+background-image:radial-gradient(60% 80% at 85% 10%,rgba(63,207,174,.28),transparent 60%),radial-gradient(40% 50% at 5% 100%,rgba(242,199,68,.14),transparent 60%),radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);
+background-size:auto,auto,26px 26px}
+.hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center;padding-top:84px;padding-bottom:56px}
+.eyebrow{font:500 14px "IBM Plex Mono",monospace;color:#3fcfae;letter-spacing:.04em}
+.hero h1{font-size:clamp(46px,8.4vw,100px);font-weight:700;margin:14px 0 0;letter-spacing:-.035em}
+.hero h1 span{display:block;color:#f2c744}
+.hero .lead{max-width:33em;color:#b9cdc5;margin:24px 0 30px;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;border:1.5px solid rgba(255,255,255,.35);text-decoration:none;font-weight:500;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.08)}
+.btn.p{background:#3fcfae;border-color:#3fcfae;color:#07130f}
+.btn.p:hover{background:#6fe0c6}
+.term{background:#0d1c17;border:1px solid #28423a;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.45);overflow:hidden}
+.term .bar{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid #28423a}
+.term .bar i{width:11px;height:11px;border-radius:50%;background:#2c4a41}
+.term pre{margin:0;padding:20px;font:400 14.5px/1.9 "IBM Plex Mono",monospace;color:#b9cdc5;overflow-x:auto}
+.term .k{color:#3fcfae}.term .o{color:#f2c744}.term .d{color:#6b8a80}
+.stats{border-top:1px solid rgba(255,255,255,.12);display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 0 30px}
+.stats b{display:block;font:700 34px "Bricolage Grotesque",sans-serif;color:#f2c744;line-height:1}
+.stats span{font-size:14px;color:#9db8ae}
+/* sections */
+section{padding:84px 0}
+.head{margin-bottom:34px}
+.head .eyebrow{color:var(--acc)}
+.head h2{font-size:clamp(32px,4.4vw,50px);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(10,40,30,.12);border-color:var(--acc)}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p,.card li{color:var(--mute);margin:0}
+.card ul{margin:10px 0 0;padding-left:20px}.card li{margin:5px 0}
+.num{font:500 13px "IBM Plex Mono",monospace;color:var(--acc);display:block;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:4px 13px;font-size:14.5px}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start}
+.about p{margin:0;font-size:19px;color:var(--mute)}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+.facts li:last-child{border:0}.facts em{font-style:normal;color:var(--mute)}
+.tl{border-left:2px solid var(--line);margin-left:8px;padding-left:34px;position:relative}
+.tl:before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px var(--soft)}
+.tl .when{font:500 14px "IBM Plex Mono",monospace;color:var(--acc)}
+.tl h3{font-size:30px;margin:6px 0 2px}
+.tl .org{color:var(--mute);margin:0 0 14px}
+.tl ul{margin:0;padding-left:20px;color:var(--mute)}.tl li{margin:7px 0}
+.cert{border-top:4px solid var(--acc)}
+.cert:nth-child(2){border-top-color:var(--hi)}.cert:nth-child(3){border-top-color:#5b8def}.cert:nth-child(4){border-top-color:#e2735b}
+.contact{background:#09130f;color:#eaf3ef;border-radius:24px;padding:clamp(28px,5vw,56px);background-image:radial-gradient(50% 90% at 100% 0,rgba(63,207,174,.25),transparent 60%)}
+.contact h2{font-size:clamp(34px,5vw,60px)}
+.contact p{color:#b9cdc5;max-width:30em;margin:14px 0 26px}
+.contact a.l{display:block;width:fit-content;max-width:100%;font:500 clamp(18px,2.8vw,28px) "Bricolage Grotesque",sans-serif;margin:8px 0;text-decoration:none;border-bottom:2px solid #f2c744;overflow-wrap:anywhere}
+.contact a.l:hover{color:#f2c744}
+footer{padding:30px 0 48px;color:var(--mute);font-size:14.5px}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:820px){.hero .wrap,.grid,.about{grid-template-columns:1fr}.hero .wrap{padding-top:52px;gap:34px}.stats{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.tl{padding-left:24px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.card,.btn{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>S<i>M</i>.</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<div>
+<div class="eyebrow">ICT GRADUATE · GAUTENG · OPEN TO RELOCATION</div>
+<h1>Siphosethu <span>Mofokeng</span></h1>
+<p class="lead">I build full-stack web apps and keep systems running. My work spans software development, cloud, networking, databases and testing.</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#projects">View projects</a></div>
+</div>
+<aside class="term" aria-label="Capstone project stack">
+<div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="d"># IBM full-stack capstone</span>
+<span class="k">$</span> stack --deployed
+
+<span class="o">react</span>      <span class="d">→</span> front end
+<span class="o">node/express</span> <span class="d">→</span> REST API
+<span class="o">mongodb</span>    <span class="d">→</span> database
+<span class="o">git + ci/cd</span> <span class="d">→</span> ship it</pre>
+</aside>
+</div>
+<div class="wrap stats">
+<div><b>14</b><span>certifications and courses</span></div>
+<div><b>1 yr</b><span>software development</span></div>
+<div><b>BICT</b><span>Durban University of Technology</span></div>
+<div><b>4</b><span>stack layers in my capstone</span></div>
+</div>
+</header>
+
+<section id="about"><div class="wrap">
+<div class="head rv"><div class="eyebrow">01 / ABOUT</div><h2>Practical, curious and thorough</h2></div>
+<div class="about rv">
+<p>I'm an ICT graduate with a year of software development experience at Zakheni ICT and a solid base in cloud, networking, databases and testing. I'm certified in Microsoft Azure Fundamentals, SAP HANA administration, SAP technology consulting, CompTIA A+ and N+, and full-stack JavaScript, with Cisco training in cybersecurity, networking and Linux. I like breaking problems into clear steps, testing carefully and explaining the result in plain language.</p>
+<div class="card"><ul class="facts">
+<li><em>Based in</em><span>Gauteng</span></li>
+<li><em>Relocation</em><span>Open</span></li>
+<li><em>Languages</em><span>IsiXhosa, English</span></li>
+<li><em>Focus</em><span>Software, cloud, support</span></li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="skills" style="background:var(--soft)"><div class="wrap">
+<div class="head rv"><div class="eyebrow">02 / SKILLS</div><h2>What I work with</h2></div>
+<div class="grid">
+<div class="card rv"><span class="num">01</span><h3>Coding</h3><p>Clean, tested code and systematic debugging.</p><div class="tags"><span>JavaScript</span><span>C#</span><span>HTML/CSS</span><span>React</span><span>Node.js</span><span>Algorithms</span></div></div>
+<div class="card rv"><span class="num">02</span><h3>Databases</h3><p>Querying, filtering, joins and basic data modelling.</p><div class="tags"><span>SQL</span><span>Oracle SQL Workshop</span><span>PL/SQL</span><span>MongoDB</span></div></div>
+<div class="card rv"><span class="num">03</span><h3>Technical support</h3><p>Hands-on help for users, remote and in person.</p><div class="tags"><span>Hardware and software troubleshooting</span><span>Desktop maintenance</span><span>IP, DNS, DHCP</span></div></div>
+<div class="card rv"><span class="num">04</span><h3>Tools and practice</h3><p>Step-by-step problem solving and careful testing.</p><div class="tags"><span>Git and GitHub</span><span>Black-box testing</span><span>White-box testing</span><span>Word, Excel, PowerPoint</span></div></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="head rv"><div class="eyebrow">03 / EXPERIENCE</div><h2>Where I've worked</h2></div>
+<div class="tl rv">
+<div class="when">2024 – 2025 · CENTURION, GAUTENG</div>
+<h3>Software Developer</h3>
+<p class="org">Zakheni ICT</p>
+<ul>
+<li>Turned complex technical problems into simple, logical steps that the team could build and verify.</li>
+<li>Gave clear, patient guidance to non-technical users so they understood how the software works.</li>
+<li>Tested and debugged code systematically, with close attention to detail.</li>
+<li>Worked in a team and picked up new tools quickly.</li>
+</ul>
+</div>
+</div></section>
+
+<section id="projects" style="background:var(--soft)"><div class="wrap">
+<div class="head rv"><div class="eyebrow">04 / PROJECTS</div><h2>Things I've built and learned</h2></div>
+<div class="grid">
+<div class="card rv"><span class="num">IBM / COURSERA</span><h3>JavaScript Full Stack Capstone</h3><p>A cloud-native full-stack application, built and deployed end to end.</p><ul><li>React front end, Node.js and Express back end, MongoDB database.</li><li>Git and GitHub for version control.</li><li>Agile and CI/CD principles applied.</li></ul></div>
+<div class="card rv"><span class="num">UNIVERSITY OF MINNESOTA · 2026</span><h3>Software Testing Specialization</h3><p>Structured ways to verify software and find defects.</p><ul><li>Black-box and white-box testing.</li><li>Automated testing.</li><li>Formal testing theory.</li></ul></div>
+</div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<div class="head rv"><div class="eyebrow">05 / CERTIFICATIONS</div><h2>Certified and trained</h2></div>
+<div class="grid">
+<div class="card cert rv"><h3>Cloud, security and networking</h3><div class="tags"><span>Microsoft Azure Fundamentals (AZ-900)</span><span>Introduction to Cybersecurity</span><span>Introduction to Modern AI</span><span>Networking Essentials</span><span>Linux Essentials</span><span>Cisco Networking Basics</span></div><p style="margin-top:12px;font-size:15px">Cisco courses via Cisco Networking Academy.</p></div>
+<div class="card cert rv"><h3>SAP</h3><div class="tags"><span>SAP Certified Database Administrator, SAP HANA</span><span>SAP Technology Consultant</span></div></div>
+<div class="card cert rv"><h3>Development and testing</h3><div class="tags"><span>IBM Full-Stack JavaScript Developer</span><span>Software Testing and Automation</span><span>Oracle Database Program with PL/SQL (training)</span></div></div>
+<div class="card cert rv"><h3>IT support</h3><div class="tags"><span>CompTIA A+</span><span>CompTIA N+</span><span>Desktop Technician</span></div></div>
+</div>
+</div></section>
+
+<section id="education" style="background:var(--soft)"><div class="wrap">
+<div class="head rv"><div class="eyebrow">06 / EDUCATION</div><h2>Where I studied</h2></div>
+<div class="grid">
+<div class="card rv"><span class="num">2020 – 2023 · DURBAN, KWAZULU-NATAL</span><h3>Bachelor of Information and Communication Technology</h3><p>Durban University of Technology. Programming logic, problem solving, information systems and software development fundamentals.</p></div>
+<div class="card rv"><span class="num">2019 · UMZIMKHULU, KWAZULU-NATAL</span><h3>National Senior Certificate</h3><p>Reitvlei Secondary School. Mathematics, Physical Science, Life Sciences, Geography, Life Orientation, IsiXhosa Home Language, English First Additional Language.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="contact rv">
+<div class="eyebrow">07 / CONTACT</div>
+<h2 style="margin-top:8px">Let's work together</h2>
+<p>I'm based in Gauteng and open to relocation. References are available on request.</p>
+<a class="l" href="mailto:siphosethumofokeng137@gmail.com">siphosethumofokeng137@gmail.com</a>
+<a class="l" href="tel:+27783580057">078 358 0057</a>
+<a class="l" href="https://linkedin.com/siphosethumofokeng" rel="noopener">linkedin.com/siphosethumofokeng</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Siphosethu Yavela Mofokeng</div></footer>
+<script>
+(function(){var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)})})();
+</script>
+</body>
+</html>
